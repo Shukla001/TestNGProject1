@@ -10,6 +10,8 @@ import Resources.CommonUtility;
 import Resources.Constant;
 import Resources.baseClass;
 
+//this is the change we need to puch on the github
+
 public class VerifyLogin extends baseClass {
 	
 	@Test
@@ -19,6 +21,8 @@ public class VerifyLogin extends baseClass {
 		LoginPageObjects obj=new LoginPageObjects(driver);
 		
 		obj.EnterUsername().sendKeys("test");
+		CommonUtility.explicitWaits(10, obj.EnterPassword());// added explicit wait to wait until other element are visible.
+		
 		obj.EnterPassword().sendKeys("1234");
 		obj.ClickOnLogin().click();
 		

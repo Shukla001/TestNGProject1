@@ -12,6 +12,8 @@ import Resources.CommonUtility;
 import Resources.Constant;
 import Resources.baseClass;
 
+
+// this is also the change that we need to push on the github
 public class VerifySignUp extends baseClass{
 	@Test
 	public void SignUp() throws IOException, InterruptedException {
